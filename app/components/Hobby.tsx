@@ -32,7 +32,7 @@ const Hobby: React.FC = () => {
                         <Typography style={{ fontSize: '2vh', color: 'cyan' }}>Music</Typography>
                         <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
 
-                            <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/track/6UHwmfYfRm445uyyM9HO3o?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/track/6UHwmfYfRm445uyyM9HO3o?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
