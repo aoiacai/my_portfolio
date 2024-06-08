@@ -32,7 +32,7 @@ const Work: React.FC = () => {
                     </div>
                     <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh' }}>Pomodoro Timer</Typography>
-                        <a href="  https://github.com/aoiacai/pomodoro_simple/blob/main/pic.png">
+                        <a href="https://aoiacai.github.io/pomodoro_simple">
                             <img src="https://github.com/aoiacai/pomodoro_simple/blob/main/pic.png?raw=true" alt="Procon34 Open" style={{ height: '40vh' }} />
                         </a>
                     </div>
