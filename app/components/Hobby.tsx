@@ -11,13 +11,13 @@ const Hobby: React.FC = () => {
                 <div className='text_and_icon'>
                     <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh', color: 'cyan' }}>GAME</Typography>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly' }}>
                             <Typography style={{ fontSize: '3vh' }}>stardew valley</Typography>
                             <Typography style={{ fontSize: '3vh' }}>AtCoder</Typography>
                         </div>
 
                         <Typography style={{ fontSize: '2vh', color: 'cyan' }}>COMIC</Typography>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly' }}>
                             <Typography style={{ fontSize: '3vh', paddingLeft: '1vh', paddingRight: '1vh' }}>結界師</Typography>
                             <Typography style={{ fontSize: '3vh', paddingLeft: '1vh', paddingRight: '1vh' }}>サマータイムレンダ</Typography>
                             <Typography style={{ fontSize: '3vh', paddingLeft: '1vh', paddingRight: '1vh' }}>チ。</Typography>
