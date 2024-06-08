@@ -31,12 +31,6 @@ const Work: React.FC = () => {
                         </a>
                     </div>
                     <div style={{ display: 'block' }}>
-                        <Typography style={{ fontSize: '2vh' }}>jig.jp インターン 共同開発</Typography>
-                        <a href="https://github.com/jigintern/ultimate-osechi">
-                            <img src="/osechi.png" alt="jigjp intern" style={{ height: '40vh' }} />
-                        </a>
-                    </div>
-                    <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh' }}>Pomodoro Timer</Typography>
                         <a href="  https://github.com/aoiacai/pomodoro_simple/blob/main/pic.png">
                             <img src="https://github.com/aoiacai/pomodoro_simple/blob/main/pic.png?raw=true" alt="Procon34 Open" style={{ height: '40vh' }} />
