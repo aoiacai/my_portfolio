@@ -23,7 +23,7 @@ const Work: React.FC = () => {
         <div className='profile' id='works' style={{ paddingTop: '20px' }}>
             <Typography style={{ fontSize: '7vh', padding: '5vh' }}>Works</Typography>
             <div className='text-area'>
-                <div className='text_and_icon' style={{ flexWrap: 'wrap' }}>
+                <div className='images' style={{ flexWrap: 'wrap' }}>
                     <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh' }}>高専プロコン競技部門 GUI</Typography>
                         <a href="https://github.com/aoiacai/procon34_Open">
