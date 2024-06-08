@@ -1,0 +1,30 @@
+.app {
+    position: relative;
+    /* .content-containerの絶対位置を基準にするために親要素に相対位置を設定 */
+
+}
+
+.content-container {
+    position: relative;
+    /* 子要素の絶対位置を基準にするために自身に相対位置を設定 */
+    /* content-containerの背景色 */
+}
+
+.canvas-container {
+    position: fixed;
+    /* content-containerに対して絶対位置を指定 */
+    /* 左端に配置 */
+    width: 100%;
+    /* content-containerと同じ幅 */
+    height: 100%;
+    /* content-containerの背面に配置 */
+    pointer-events: all;
+}
+
+.emptySpace {
+    height: 50vh;
+    width: 100%;
+    z-index: -2;
+    pointer-events: none;
+
+}
