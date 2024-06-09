@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
                 <div className='text_and_icon'>
                     <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '3vmin', color: 'cyan' }}>Publication scheduled.</Typography>
-                        <Typography style={{ fontSize: '4vmin' }}>xxxx@example.com</Typography>
+                        <Typography style={{ fontSize: '4vmin' }}>*@example.com</Typography>
                     </div>
                 </div>
             </div>
