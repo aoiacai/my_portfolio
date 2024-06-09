@@ -9,11 +9,12 @@ import Awards from './components/Award';
 import Works from './components/Work';
 import Hobby from './components/Hobby';
 import Contact from './components/Contact';
+import HeaderAndEmptyAndProfile from './components/HeaderAndEmptyAndProfile';
 
 function App() {
   return (
     <div>
-      <Header />
+
       <div className='app'>
         <div className="content-container" style={{ color: 'white' }}>
           <div className="canvas-container">
@@ -21,8 +22,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='emptySpace'></div>
-      <Profile />
+      <HeaderAndEmptyAndProfile />
       <Awards />
       <Contact />
       <Works />
