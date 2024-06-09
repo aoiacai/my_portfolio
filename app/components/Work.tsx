@@ -12,7 +12,7 @@ const Work: React.FC = () => {
                     <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh' }}>高専プロコン競技部門 GUI</Typography>
                         <a href="https://github.com/aoiacai/procon34_Open" className='centerClass'>
-                            <img src="https://github.com/aoiacai/procon34_Open/blob/main/pic.png?raw=true" alt="Procon34 Open" style={{ maxHeight: '40vh', maxWidth: '80%', borderRadius: '12px', paddingBottom: '5vh' }} />
+                            <img src="https://github.com/aoiacai/procon34_Open/blob/main/pic.png?raw=true" alt="Procon34 Open" style={{ maxHeight: '40vh', maxWidth: '80%', borderRadius: '12px', marginBottom: '5vh' }} />
                         </a>
                     </div>
                     <div style={{ display: 'block' }}>
