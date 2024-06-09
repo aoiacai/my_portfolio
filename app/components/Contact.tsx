@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
             <Typography style={{ fontSize: '7vh', padding: '5vh' }}>Contact</Typography>
             <div className='text-area'>
                 <div className='text_and_icon'>
-                    <div style={{ display: 'block', paddingLeft: '10vh' }}>
+                    <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh', color: 'cyan' }}>Publication scheduled.</Typography>
                         <Typography style={{ fontSize: '3vh' }}>xxxx@example.com</Typography>
                     </div>
