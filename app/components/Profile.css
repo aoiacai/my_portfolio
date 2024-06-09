@@ -15,9 +15,30 @@
     align-items: center;
     padding: 10px;
 }
+
 .images {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+}
+
+.centerClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ul li::marker {
+    color: white;
+    /* マーカーの色を白に設定 */
+}
+
+.header_bg {
+    background-color: rgba(0, 0, 0, 1);
 }
