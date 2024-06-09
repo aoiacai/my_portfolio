@@ -33,7 +33,7 @@ class GameBoard {
     status: string = 'dropping';
     // ゲームボード上のぷよを格納する三次元配列
     board: (Puyo | null)[][][];
-    base_position: THREE.Vector3 = new THREE.Vector3(-1.5, -2.5, -1.5);
+    base_position: THREE.Vector3 = new THREE.Vector3(-1.5, -3.5, -1.5);
     board_frame: THREE.LineSegments;
     constructor(width: number, height: number, depth: number, scene: THREE.Scene) {
         this.board = Array(height).fill(null).map(() => Array(width).fill(null).map(() => Array(depth).fill(null)));
@@ -46,7 +46,7 @@ class GameBoard {
         // ラインを作成
         this.board_frame = new THREE.LineSegments(edges, lineMaterial);
         // シーンに追加
-        this.board_frame.position.y = 0.45;
+        this.board_frame.position.y = 0.45 - 1;
         scene.add(this.board_frame);
     }
 
