@@ -217,13 +217,13 @@ class GameBoard {
 
                 const group = new THREE.Group();
 
-                text1.position.set(-0.9, 0.25, 2.5);
+                text1.position.set(-0.9, 0.25-1, 2.5);
                 text2.rotation.y = Math.PI / 2;
-                text2.position.set(2.5, 0.25, 0.9);
+                text2.position.set(2.5, 0.25-1, 0.9);
                 text3.rotation.y = Math.PI;
-                text3.position.set(0.9, 0.25, -2.5);
+                text3.position.set(0.9, 0.25-1, -2.5);
                 text4.rotation.y = -Math.PI / 2;
-                text4.position.set(-2.5, 0.25, -0.9);
+                text4.position.set(-2.5, 0.25-1, -0.9);
                 // シーンに追加
                 scene.add(text1);
                 scene.add(text2);
