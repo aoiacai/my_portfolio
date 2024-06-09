@@ -78,7 +78,10 @@ function ResponsiveAppBar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center" color='white'>{page}</Typography>
+                                    <ScrollLink to={page.toLowerCase()} smooth={true} duration={500} key={page}>
+                                        <Typography textAlign="center" color='white'>{page}</Typography>
+                                    </ScrollLink>
+                                   
                                 </MenuItem>
                             ))}
                         </Menu>
