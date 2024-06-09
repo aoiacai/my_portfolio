@@ -5,8 +5,8 @@ import './Profile.css'
 
 const Work: React.FC = () => {
     return (
-        <div className='profile' id='works' style={{ paddingTop: '20px' }}>
-            <Typography style={{ fontSize: '12vmin', padding: '4vmin' }}>Works</Typography>
+        <div className='profile' id='works' style={{ paddingTop: '65px' }}>
+            <Typography style={{ fontSize: '12vmin', paddingLeft: '4vmin', paddingBottom: '4vmin' }}>Works</Typography>
             <div className='text-area'>
                 <div className='images' style={{ flexWrap: 'wrap' }}>
                     <div style={{ display: 'block' }}>
