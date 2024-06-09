@@ -6,18 +6,18 @@ import { Avatar, Link, Typography } from '@mui/material';
 const Profile: React.FC = () => {
     return (
         <div className='profile' id='profile' style={{ paddingTop: '20px' }}>
-            <Typography style={{ fontSize: '7vh', padding: '5vh' }}>Profile</Typography>
+            <Typography style={{ fontSize: '12vmin', padding: '4vmin' }}>Profile</Typography>
             <div className='text-area'>
                 <div className='text_and_icon'>
                     <div style={{ display: 'block' }}>
                         <Typography style={{ fontSize: '2vh', color: 'cyan' }}>NAME</Typography>
-                        <Typography style={{ fontSize: '3vh' }}>Tomoya Takahashi</Typography>
+                        <Typography style={{ fontSize: '4vmin' }}>Tomoya Takahashi</Typography>
                         <Typography style={{ fontSize: '2vh', color: 'cyan' }}>SCHOOL</Typography>
-                        <Typography style={{ fontSize: '3vh' }}>National Institute of Technology 5th grade</Typography>
+                        <Typography style={{ fontSize: '4vmin' }}>National Institute of Technology 5th grade</Typography>
                     </div>
 
                     <Link href="https://github.com/aoiacai" target="_blank" rel="noopener noreferrer">
-                        <Avatar style={{ height: '12vh', width: '12vh' }} alt="aoiacai" src="https://github.com/aoiacai.png" />
+                        <Avatar style={{ height: '12vmin', width: '12vmin' }} alt="aoiacai" src="https://github.com/aoiacai.png" />
                     </Link>
                 </div>
             </div>
