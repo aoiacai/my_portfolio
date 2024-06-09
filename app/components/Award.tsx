@@ -5,8 +5,8 @@ import { Typography } from '@mui/material';
 
 const Award: React.FC = () => {
     return (
-        <div className='profile' id='awards' style={{ paddingTop: '20px' }}>
-            <Typography style={{ fontSize: '12vmin', padding: '4vmin' }}>Awards</Typography>
+        <div className='profile' id='awards' style={{ paddingTop: '65px' }}>
+            <Typography style={{ fontSize: '12vmin', paddingLeft: '4vmin', paddingBottom: '4vmin' }}>Awards</Typography>
             <div className='text-area'>
 
 
