@@ -5,8 +5,8 @@ import { Avatar, Link, Typography } from '@mui/material';
 
 const Profile: React.FC = () => {
     return (
-        <div className='profile' id='profile' style={{ paddingTop: '20px' }}>
-            <Typography style={{ fontSize: '12vmin', padding: '4vmin' }}>Profile</Typography>
+        <div className='profile' id='profile' style={{ paddingTop: '65px' }}>
+            <Typography style={{ fontSize: '12vmin', paddingLeft: '4vmin', paddingBottom: '4vmin' }}>Profile</Typography>
             <div className='text-area'>
                 <div className='text_and_icon'>
                     <div style={{ display: 'block' }}>
