@@ -13,7 +13,7 @@ const Hobby: React.FC = () => {
                         <div className='centerClass'>
                             <Typography style={{ fontSize: '3vmin', color: 'cyan' }}>GAME</Typography>
                         </div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', gap: '3vmin', paddingBottom: '5vh' }}>
                             <Typography style={{ fontSize: '4vmin' }}>stardew valley</Typography>
                             <Typography style={{ fontSize: '4vmin' }}>AtCoder</Typography>
                         </div>
@@ -21,7 +21,7 @@ const Hobby: React.FC = () => {
                         <div className='centerClass'>
                             <Typography style={{ fontSize: '3vmin', color: 'cyan' }}>COMIC</Typography>
                         </div>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', gap: '3vmin' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', gap: '3vmin' , paddingBottom: '5vh'}}>
                             <div style={{ fontSize: '4vmin' }}>結界師</div>
                             <div style={{ fontSize: '4vmin' }}>サマータイムレンダ</div>
                             <div style={{ fontSize: '4vmin' }}>チ。</div>
