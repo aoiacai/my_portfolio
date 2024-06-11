@@ -217,13 +217,13 @@ class GameBoard {
 
                 const group = new THREE.Group();
 
-                text1.position.set(-0.9, 0.25-1, 2.5);
+                text1.position.set(-0.9, 0.25 - 1, 2.5);
                 text2.rotation.y = Math.PI / 2;
-                text2.position.set(2.5, 0.25-1, 0.9);
+                text2.position.set(2.5, 0.25 - 1, 0.9);
                 text3.rotation.y = Math.PI;
-                text3.position.set(0.9, 0.25-1, -2.5);
+                text3.position.set(0.9, 0.25 - 1, -2.5);
                 text4.rotation.y = -Math.PI / 2;
-                text4.position.set(-2.5, 0.25-1, -0.9);
+                text4.position.set(-2.5, 0.25 - 1, -0.9);
                 // シーンに追加
                 scene.add(text1);
                 scene.add(text2);
@@ -314,6 +314,8 @@ const Home: NextPage = () => {
         renderer.setSize(sizes.width, sizes.height)
         renderer.setPixelRatio(window.devicePixelRatio)
         const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // スムーズな回転を有効にする
+        controls.dampingFactor = 0.05;
 
         //ゲームボードを生成
         const gameBoard = new GameBoard(4, 7, 4, scene);
@@ -326,13 +328,34 @@ const Home: NextPage = () => {
         const light = new THREE.DirectionalLight(0xFFFFFF, 1);
         scene.add(light);
 
+        // 自動回転のフラグとスピード
+        let autoRotate = true;
+        const rotateSpeed = 0.006;
 
+        // ユーザーの操作検出
+        const onMouseDown = () => {
+            autoRotate = false;
+        };
 
+        const onMouseUp = () => {
+            autoRotate = true;
+        };
+        renderer.domElement.addEventListener('mousedown', onMouseDown);
+        renderer.domElement.addEventListener('mouseup', onMouseUp);
+        renderer.domElement.addEventListener('touchstart', onMouseDown);
+        renderer.domElement.addEventListener('touchend', onMouseUp);
 
         // アニメーション
         const clock = new THREE.Clock();
         const tick = () => {
             window.requestAnimationFrame(tick)
+
+            if (autoRotate) {
+                camera.position.x = camera.position.x * Math.cos(rotateSpeed) - camera.position.z * Math.sin(rotateSpeed);
+                camera.position.z = camera.position.z * Math.cos(rotateSpeed) + camera.position.x * Math.sin(rotateSpeed);
+                camera.lookAt(scene.position);
+            }
+            controls.update();
             // 経過時間を取得
             const deltaTime = clock.getDelta();
             // ぷよの位置を更新
