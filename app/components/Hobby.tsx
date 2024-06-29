@@ -37,8 +37,7 @@ const Hobby: React.FC = () => {
                             <Typography style={{ fontSize: '3vmin', color: 'cyan' }}>Music</Typography>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
-                            <iframe style={{ borderRadius: '12px', maxWidth: "90%", height: '30vh' }} src="https://open.spotify.com/embed/track/6UHwmfYfRm445uyyM9HO3o?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            <iframe style={{ borderRadius: '12px', maxWidth: "90%", height: '30vh' }} src="https://open.spotify.com/embed/artist/5C8KyBfvAz9PSaOd30eIow?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style={{ borderRadius: '12px', maxWidth: "90%" }} src="https://open.spotify.com/embed/artist/5C8KyBfvAz9PSaOd30eIow?utm_source=generator" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
